@@ -1,10 +1,12 @@
-(require 'load-relative)
+;; -*- lexical-binding: t; -*-
 
-(require-relative "../m-buffer-macro")
-(require-relative "../m-buffer")
-(require-relative "../m-buffer-at")
+;; Copyright (C) 2022-2024  Free Software Foundation, Inc.
 
-(require 'lentic-doc)
+(require 'm-buffer-macro)
+(require 'm-buffer)
+(require 'm-buffer-at)
+
+(require 'lentic-doc nil t)
 
 (defun doc-gen ()
   (lentic-doc-htmlify-package 'm-buffer))
